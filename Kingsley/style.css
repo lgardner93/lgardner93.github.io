@@ -1,0 +1,219 @@
+*
+{
+	padding: 0;
+	font-weight: normal; 
+}
+
+h1, h2, p, input, textarea, body
+{
+	text-align: center;
+	font-family: calibri light;
+	color:rgb(80, 80, 80);
+}
+
+/* Paragraphs */
+p
+{
+	font-size:20px;
+	color: black;
+	line-height: 1.2;
+	margin-bottom: 1.25em;
+}
+
+/* Nav bar */
+ul 
+{
+    list-style-type: none;
+    overflow: hidden;
+	z-index: 100;
+}
+
+li 
+{
+	display: inline-block;
+}
+
+a
+{
+    display: block;
+    color:rgb(80, 80, 80);
+	font-family: calibri;
+    padding: 14px 16px;
+    text-decoration: none;
+	border-bottom: 2px solid white;
+}
+
+a:hover
+{
+	color: black;
+	border-bottom: 2px solid gray;
+}
+
+/* Flickity Carousel Style */
+.carousel
+{
+	width: 50%;
+}
+
+/* CSS For Client Carousel */
+.client-cell
+{
+	margin-right: 50px;
+}
+
+/* Text within Carousels */
+.flickity-text
+{
+
+	position:absolute; 
+	top:28%; 
+	left:20%; 
+	right:20%; 
+	color:white;; 
+	background-color:rgba(0,0,0,0); 
+	padding:20px; 
+	font-size: 2vw; 
+	font-family: calibri;
+}
+
+/* Flickity vertical align cells */ 
+.flickity-slider 
+{
+  display: flex;
+  align-items: center;
+}
+
+#banner
+{
+	max-width: 50%;
+	height: auto; 
+}
+
+#banner img
+{
+	width: 100%;
+	height: auto; 
+}
+
+#paragraphs 
+{
+	left:25%;
+	right:25%;
+	width:50%;
+	text-align:center;
+}
+
+#nav
+{
+	text-align: center;
+}
+
+#divider
+{
+	border-bottom:2px solid;
+	width:50%;
+	display:inline-block;
+	color:rgba(0,0,0,0.1);
+}
+
+/* Style for Form Inputs */
+input[type=text], textarea 
+{
+  width: 100%;
+  font-size:20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* PHP Submit button style */
+input[type=submit] 
+{
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover 
+{
+  background-color: rgba(0,0,0,0.5);
+}
+
+.container 
+{
+  width: 50%;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+
+/* Adjustments for Phones */ 
+@media screen and (max-width:800px)
+{
+	p
+	{
+		font-size:15px;
+	}
+	
+	.carousel
+	{
+		width: 100%;
+	}
+	
+	.flickity-text
+	{
+		position:absolute; 
+		top:28%; 
+		left:30%; 
+		right:30%; 
+		color:white; 
+		background-color:rgba(0,0,0,0); 
+		padding:20px; 
+		font-size: 6vw; 
+	}
+	
+	.container 
+	{
+	  width: 100%;	  
+	}
+	
+	#banner
+	{
+		max-width:100%;
+	}
+	
+	#paragraphs
+	{
+		left:1%;
+		right:1%;
+		width: 95%;
+	}
+
+    /*Make all menu links full width*/
+    ul li, li a 
+	{
+		padding: 5px 0px;
+        width: 100%;
+		border-bottom: 0px solid white;
+    }
+	
+	ul li
+	{
+		background-color:rgba(0,0,0,0.1);
+	}
+	
+	a:hover
+	{
+		color: black;
+		background-color:rgba(0,0,0,0.2);
+		border-bottom: 0px solid white;
+	}
+}

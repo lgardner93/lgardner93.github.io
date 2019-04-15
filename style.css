@@ -1,0 +1,236 @@
+*
+{
+	padding: 0;
+	font-weight: normal; 
+}
+
+h1, h2, p, textarea, body
+{
+	text-align: center;
+	font-family: calibri light;
+	color:rgb(80, 80, 80);
+}
+
+body 
+{
+	margin: 0px;
+}
+
+/* Headers */
+h1, h2
+{
+	text-align: center;
+	font-family: calibri;
+	color: white; 
+	animation-name: fadein;
+	animation-duration: 2.5s;
+	animation-timing-function: ease-out;
+}
+
+h3, h4
+{
+	font-family: calibri;
+	color: gray;
+	font-size: 50px;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
+
+/* Header Banner Animation */
+@keyframes fadein
+{
+	0%
+	{	
+		padding-top: 75px;
+		opacity: 0;
+	}
+	30%
+	{	
+		padding-top: 75px;
+		opacity: 0;
+	}
+	75%
+	{
+		padding-top: 0px;
+		padding-bottom: 20px;
+	}
+	100%
+	{		
+		opacity: 1;
+	}
+}
+
+
+/* Paragraphs */
+p
+{
+	font-size:22px;
+	color: black;
+	line-height: 1.2;
+	margin-bottom: 1.25em;
+}
+
+a
+{
+    color:rgb(80, 80, 80);
+	font-family: calibri;
+    text-decoration: none;
+}
+
+a:hover
+{
+	color: black;
+	border-bottom: 2px solid gray;
+}
+
+
+/* Parallax Background */
+.parallax 
+{
+	background-image: url("BannerBeach.jpg");
+	height: 1000px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#parallax-container 
+ {
+    height: 1000px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 2vw;
+}
+
+/* About Section */ 
+#about-container
+{
+	height: 500px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+#about-education-container
+{
+	height: 500px; 
+}
+
+#about-headers
+{
+	font-size: 2vw;
+	color: gray; 
+	font-weight: bold;
+}
+
+#about-images
+{
+	width: 10vw;
+	height: 10vw; 
+	margin: 40px; 
+}
+
+#box
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+/* Projects Section */ 
+#projects-container
+{
+	height: 2000px;
+	background-color: dodgerblue;
+}
+
+#projects-headers
+{
+	font-size: 32px;
+	font-weight: bold;
+	color: white; 
+	margin-block-start: 0em;
+}
+
+#projects-button
+{
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: white;
+	border-bottom: 5px solid gray;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 50px;
+}
+
+#projects-button:hover
+{
+	border-bottom: 5px solid white;
+}
+
+#paragraphs 
+{
+	padding-left:25%;
+	padding-right:25%;
+	width:50%;
+	text-align:center;
+}
+
+
+/* Flickity Carousel Style */
+.carousel
+{
+	width: 815px;
+}
+
+/* CSS For Client Carousel */
+.client-cell
+{
+	margin-right: 50px;
+}
+
+
+.container 
+{
+  width: 50%;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* Adjustments for Phones */ 
+@media screen and (max-width:800px)
+{
+	p
+	{
+		font-size:15px;
+	}
+	
+	.carousel
+	{
+		width: 100%;
+	}
+	.container 
+	{
+	  width: 100%;	  
+	}
+	
+	#banner
+	{
+		max-width:100%;
+	}
+	
+	#paragraphs
+	{
+		left:1%;
+		right:1%;
+		width: 95%;
+	}
+}
