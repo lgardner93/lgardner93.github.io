@@ -4,43 +4,78 @@
 	font-weight: normal; 
 }
 
-h1, h2, p, input, textarea, body
+h1, h2, p, textarea, body
 {
 	text-align: center;
 	font-family: calibri light;
 	color:rgb(80, 80, 80);
 }
 
+body 
+{
+	margin: 0px;
+}
+
+/* Headers */
+h1, h2
+{
+	text-align: center;
+	font-family: calibri;
+	color: white; 
+	animation-name: fadein;
+	animation-duration: 2.5s;
+	animation-timing-function: ease-out;
+	font-size: 5vw; 
+}
+
+h3, h4, h5
+{
+	font-family: calibri;
+	color: gray;
+	font-size: 50px;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
+
+/* Header Banner Animation */
+@keyframes fadein
+{
+	0%
+	{	
+		padding-top: 75px;
+		opacity: 0;
+	}
+	30%
+	{	
+		padding-top: 75px;
+		opacity: 0;
+	}
+	75%
+	{
+		padding-top: 0px;
+		padding-bottom: 20px;
+	}
+	100%
+	{		
+		opacity: 1;
+	}
+}
+
+
 /* Paragraphs */
 p
 {
-	font-size:20px;
+	font-size:22px;
 	color: black;
 	line-height: 1.2;
 	margin-bottom: 1.25em;
 }
 
-/* Nav bar */
-ul 
-{
-    list-style-type: none;
-    overflow: hidden;
-	z-index: 100;
-}
-
-li 
-{
-	display: inline-block;
-}
-
 a
 {
-    display: block;
     color:rgb(80, 80, 80);
 	font-family: calibri;
-    padding: 14px 16px;
     text-decoration: none;
-	border-bottom: 2px solid white;
 }
 
 a:hover
@@ -49,10 +84,137 @@ a:hover
 	border-bottom: 2px solid gray;
 }
 
+
+/* Parallax Banner Background */
+.parallax 
+{
+	background-image: url("BannerBeach.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#parallax-container 
+ {
+    height: 100vh;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2vw;
+}
+
+/* About Section */ 
+#about-container
+{
+	height: 500px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+#about-education-container
+{
+	height: 500px; 
+}
+
+#about-headers
+{
+	font-size: 2vw;
+	color: gray; 
+	font-weight: bold;
+}
+
+#about-images
+{
+	width: 10vw;
+	height: 10vw; 
+	margin: 40px; 
+}
+
+#box
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+/* Projects Section */ 
+.parallax-np
+{
+	background-image: url("NPBG.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#projects-container
+{
+	height: 1000px;
+}
+
+#projects-headers
+{
+	font-size: 32px;
+	font-weight: bold;
+	color: black; 
+	margin-block-start: 0em;
+}
+
+#projects-button
+{
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	border-bottom: 5px solid gray;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 50px;
+}
+
+#projects-button:hover
+{
+	border-bottom: 5px solid white;
+}
+
+#paragraphs 
+{
+	padding-left:25%;
+	padding-right:25%;
+	width:50%;
+	text-align:center;
+}
+
+#nextplease-container 
+ {
+	width: 100%
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#nextplease-images
+{
+	width: 815px; 
+	height: 460px;
+}
+
+#kingsley-image
+{
+	width:35%;
+}
+
 /* Flickity Carousel Style */
 .carousel
 {
-	width: 50%;
+	width: 815px;
 }
 
 /* CSS For Client Carousel */
@@ -61,90 +223,6 @@ a:hover
 	margin-right: 50px;
 }
 
-/* Text within Carousels */
-.flickity-text
-{
-
-	position:absolute; 
-	top:28%; 
-	left:20%; 
-	right:20%; 
-	color:white;; 
-	background-color:rgba(0,0,0,0); 
-	padding:20px; 
-	font-size: 2vw; 
-	font-family: calibri;
-}
-
-/* Flickity vertical align cells */ 
-.flickity-slider 
-{
-  display: flex;
-  align-items: center;
-}
-
-#banner
-{
-	max-width: 50%;
-	height: auto; 
-}
-
-#banner img
-{
-	width: 100%;
-	height: auto; 
-}
-
-#paragraphs 
-{
-	left:25%;
-	right:25%;
-	width:50%;
-	text-align:center;
-}
-
-#nav
-{
-	text-align: center;
-}
-
-#divider
-{
-	border-bottom:2px solid;
-	width:50%;
-	display:inline-block;
-	color:rgba(0,0,0,0.1);
-}
-
-/* Style for Form Inputs */
-input[type=text], textarea 
-{
-  width: 100%;
-  font-size:20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-/* PHP Submit button style */
-input[type=submit] 
-{
-  background-color: gray;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover 
-{
-  background-color: rgba(0,0,0,0.5);
-}
 
 .container 
 {
@@ -154,35 +232,114 @@ input[type=submit]:hover
   padding: 20px;
 }
 
-
 /* Adjustments for Phones */ 
 @media screen and (max-width:800px)
 {
-	p
+	h1
 	{
-		font-size:15px;
+		font-size: 10vw;
 	}
 	
+	p
+	{
+		font-size:3.5vw;
+	}
+	
+	/* About Section */
+	#about-container
+	{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	#box
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#about-images
+	{
+		width: 20vw;
+		height: 20vw; 
+		margin: 20px; 
+	}
+	
+	#about-headers
+	{
+		font-size: 6vw;
+	}
+	
+	#about-education-container
+	{
+		height: fit-content; 
+		padding-bottom: 25px;
+	}
+	/* About Section End */ 
+	
+	
+	/* Next Please Section */
 	.carousel
 	{
 		width: 100%;
 	}
 	
-	.flickity-text
-	{
-		position:absolute; 
-		top:28%; 
-		left:30%; 
-		right:30%; 
-		color:white; 
-		background-color:rgba(0,0,0,0); 
-		padding:20px; 
-		font-size: 6vw; 
-	}
-	
 	.container 
 	{
 	  width: 100%;	  
+	}
+	
+	.parallax-np
+	{
+		background-image: url("NPBG.jpg");
+		height: fit-content;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#nextplease-images
+	{
+		width: 100vw; 
+		height: inherit;
+	}
+	/* Next Please End */ 
+	
+	
+	/* Kingsley Section */ 
+	#kingsley-image
+	{
+		width:100%;
+	}
+	
+	#projects-container
+	{
+		height: fit-content;
+		padding-bottom: 50px;
+	}
+	
+	#projects-button
+	{
+		font-size: 20px;
+		margin-left: 20%;
+		margin-right: 20%;
+		padding-top: 0px;
+		border-bottom: 0px solid gray;
+		border: 5px solid gray;
+	}
+	
+	#projects-button:hover
+	{
+		border-bottom: 0px solid white;
+		border: 5px solid white;
 	}
 	
 	#banner
@@ -192,28 +349,8 @@ input[type=submit]:hover
 	
 	#paragraphs
 	{
-		left:1%;
-		right:1%;
-		width: 95%;
-	}
-
-    /*Make all menu links full width*/
-    ul li, li a 
-	{
-		padding: 5px 0px;
-        width: 100%;
-		border-bottom: 0px solid white;
-    }
-	
-	ul li
-	{
-		background-color:rgba(0,0,0,0.1);
-	}
-	
-	a:hover
-	{
-		color: black;
-		background-color:rgba(0,0,0,0.2);
-		border-bottom: 0px solid white;
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 0%;
 	}
 }
